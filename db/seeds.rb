@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+100.times do
+  name = Faker::Hipster.word
+  address = Faker::Address.street_address
+  phone_number = Faker::PhoneNumber.phone_number
+  category = rand["chinese", "italian", "japanese", "french", "belgian"]
+end
+
+# Review.create(content: 'worst experience ever', rating: 0)
+# Review.create(content: 'best suchi in town', rating: 4)
+# Review.create(content: 'staff is better than reviews say', rating: 4)
+# Review.create(content: 'clear chicen soup is the best', rating: 3)
+# Review.create(content: 'will come back', rating: 5)
